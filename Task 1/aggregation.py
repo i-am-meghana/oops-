@@ -10,7 +10,7 @@ class Library:
     def add_student(self, student):
         self.students.append(student)  # Add a student to the library
     
-    def list_students(self):
+    def list_students(self):  
         print(f"Students who visit {self.library_name}:")
         for student in self.students:
             print(student.name)
@@ -20,7 +20,7 @@ student1 = Student("John Doe")
 student2 = Student("Jane Smith")
 library = Library("Central Library")
 
-# Aggregation: Library has students
+# Aggregation: Library has students reefrence to stud1 and stud2
 library.add_student(student1)
 library.add_student(student2)
 
